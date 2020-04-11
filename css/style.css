@@ -1,3 +1,8 @@
+/*** body ***/
+body {
+    background-color: grey;
+}
+
 /*** Navbar ***/
 .navbar {
     padding-top: 0;
@@ -16,7 +21,7 @@
 
 /*** Main ***/
 main {
-    background-color: grey;
+    background-color: #CCC;
 }
 
 main .container {
