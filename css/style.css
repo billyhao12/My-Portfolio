@@ -16,10 +16,27 @@
 
 /*** Main ***/
 main {
-    background-color: #CCC;
+    background-color: grey;
+}
+
+main .container {
+
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .content-box {
     background-color: #FFF;
     padding: 20px;
+}
+
+/*** Footer ***/
+footer {
+    text-align: center;
+    background-color: grey;
+    border-top: teal 5px solid;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #FFF;
+    font-size: smaller;
 }
