@@ -11,7 +11,7 @@ body {
 
 .navbar-brand {
     background-color: teal;
-    padding: 10px 20px;
+    padding: 20px 40px;
 }
 
 .navbar-light .navbar-brand,
@@ -30,6 +30,8 @@ body {
 
 .nav-item {
     border-right: 1px solid #CCC;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .nav-item:last-child {
@@ -54,7 +56,6 @@ main {
 }
 
 main .container {
-
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -63,6 +64,15 @@ main .container {
     background-color: #FFF;
     padding: 20px;
 }
+
+.content-box h1 {
+    color: teal;
+    border-bottom: 1px solid #CCC;
+}
+
+/* .content-box p {
+    float: right;
+} */
 
 /*** Footer ***/
 footer {
