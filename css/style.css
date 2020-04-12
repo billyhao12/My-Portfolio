@@ -19,6 +19,35 @@ body {
     color: #FFF;
 }
 
+.navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar-nav .nav-link {
+    padding: 0 0.5rem;
+}
+
+.nav-item {
+    border-right: 1px solid #CCC;
+}
+
+.nav-item:last-child {
+    border-right: none;
+}
+
+@media (max-width: 991px) {
+    .navbar .container-lg,
+    .navbar-brand {
+        display: block;
+    }
+
+    .navbar-brand {
+        margin-right: -1rem;
+        margin-left: -1rem;
+    }
+}
+
 /*** Main ***/
 main {
     background-color: #CCC;
