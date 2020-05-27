@@ -63,7 +63,7 @@ main .container {
 .box {
     background-color: #FFF;
     padding: 20px;
-    border: 2px solid black;
+    border: solid black 2px;
 }
 
 h1 {
@@ -72,10 +72,24 @@ h1 {
     text-align: center;
 }
 
-.img-fluid {
+#mainProjectsTitle {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h3 {
+    text-align: center;
+}
+
+.projectTitles {
+    margin-top: 2rem;
+}
+
+.projectImages {
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     display: block;
+    border: solid black 2px;
 }
 
 .bannertxt {
@@ -119,6 +133,10 @@ input[type=text], select, textarea {
   /* When moving the mouse over the submit button, add a lighter color */
   input[type=submit]:hover {
     background-color: rgb(50, 182, 169);
+  }
+
+  #myInfo {
+      float: right;
   }
 
 /*** Footer ***/

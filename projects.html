@@ -3,10 +3,11 @@
     <head>
     
     <meta charset="UTF-8">
-    <title>Contact Form</title>
+    <title>Projects</title>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     </head>
     
@@ -17,11 +18,9 @@
                 <a class="navbar-brand" href="index.html">Billy Hao</a>
             
                 <ul class="navbar-nav ml-auto">
-
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">About</a>
                     </li>
-
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Portfolio
@@ -31,11 +30,9 @@
                           <a class="dropdown-item" href="https://drive.google.com/file/d/1gZsSoQmDHKIFkzGcs5TUROTVfpCSscpk/view?usp=sharing">Resume</a>
                         </div>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-
                 </ul>
             </div>
         </nav>
@@ -43,42 +40,36 @@
         <main>
             <div class = "container">
                 <div class = "row">
-                    <div class = "col-lg-8">
+                    <div class = "col-lg-12">
                         <div class="box">
-                            <h1>Contact Form</h1>
+                            <h1 id="mainProjectsTitle">Projects</h1>
+                            <div class="row" style="align-content: center">
 
-                            <label for="name">Name</label>
-                            <br>
-                            <input type="text" id="name" placeholder="John Smith">
+                                <div class="col-md-6">
+                                    <h3 class="projectTitles">Weather Event Planner</h3>
+                                    <img src="./Assets/Images/Weather-Event-Planner-screenshot.png"  alt="Weather Event Planner" class="projectImages img-fluid">
+                                    <a href="https://billyhao12.github.io/Weather-Event-Planner/">Deployed App</a>
+                                    <br>
+                                    <a href="https://github.com/billyhao12/Weather-Event-Planner">GitHub Repository</a>
+                                </div>
 
-                            <br>
+                                <div class="col-md-6">
+                                    <h3 class="projectTitles">Weather Dashboard</h3>
+                                    <img src="./Assets/Images/Weather-Dashboard-screenshot.png" alt="Weather Dashboard" class="projectImages img-fluid rounded float-right">
+                                    <a href="https://billyhao12.github.io/Weather-Dashboard/">Deployed App</a>
+                                    <br>
+                                    <a href="https://github.com/billyhao12/Weather-Dashboard">GitHub Repository</a>
+                                </div>
 
-                            <label for="email">Email</label>
-                            <br>
-                            <input type="text" id="email" placeholder="example@gmail.com">
-
-                            <br>
-
-                            <label for="message">Message</label>
-                            <br>
-                            <textarea id="message" name="subject" style="height:200px"></textarea>
-
-                            <br>
-
-                            <input type="submit" value="Submit">
-                        </div>
-                    </div>
-
-                    <div class = "col-lg-4" id = "myInfo">
-                        <div class = "box">
-                            <h3>My Info</h3>
-                            <ul>
-                                <li><a href="https://github.com/billyhao12">GitHub</a></li>
-                                <li><a href="https://www.linkedin.com/in/haow25/">LinkedIn</a></li>
-                                <li>Email me at <a href="mailto:billyhao12@gmail.com">billyhao12@gmail.com</a></li>
-                                <li>Phone number: +1 (425) 922-6982</li>
-                            </ul>
-                            
+                                <div class="col-md-6">
+                                    <h3 class="projectTitles">Work Day Scheduler</h3>
+                                    <img src="./Assets/Images/Work-Day-Scheduler-screenshot.png" alt="Work Day Scheduler" class="projectImages img-fluid rounded float-right">
+                                    <a href="https://billyhao12.github.io/Work-Day-Scheduler/">Deployed App</a>
+                                    <br>
+                                    <a href="https://github.com/billyhao12/Work-Day-Scheduler">GitHub Repository</a>
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
