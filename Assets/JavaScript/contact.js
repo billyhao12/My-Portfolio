@@ -4,14 +4,12 @@ $(document).ready( () => {
 
     $("form").submit( event => {
 
-        event.preventDefault();
+        fields.name = $("input[name='name']");
+        fields.email = $("input[name='email']");
+        fields.message = $("textarea[name='message']");
 
-        fields.name = $("#name");
-        fields.email = $("#email");
-        fields.message = $("#message");
-
-        sendContact();
-
+        sendContact(event);
+        
     });
 
     isNotEmpty = value => {
@@ -29,15 +27,7 @@ $(document).ready( () => {
     fieldValidation = (field, validationFunction) => {
         if (field === null) return false;
 
-        let isFieldValid = validationFunction( field.val() );
-
-        if (!isFieldValid) {
-            field.className = "placeholderRed";
-        } else {
-            field.className = "";
-        }
-
-        return isFieldValid;
+        return validationFunction( field.val() );
     }
 
     isValid = () => {
@@ -50,31 +40,14 @@ $(document).ready( () => {
         return valid;
     }
 
-    class User {
-        constructor(name, email, message) {
-            this.name = name;
-            this.email = email;
-            this.message = message;
-        }
-    }
+    sendContact = event => {
+        if ( !isValid() ) {
 
-    sendContact = () => {
-        if ( isValid() ) {
-            let user = new User( fields.name.val(), fields.email.val(), fields.message.val() );
+            event.preventDefault();
 
-            alert(`${user.name}, thanks for your message!`);
-
-            clearForm();
-
-        } else {
             alert("There was an error. Please ensure that you have completed all fields with valid information.");
-        }
-    }
 
-    clearForm = () => {
-        fields.name.val("");
-        fields.email.val("");
-        fields.message.val("");
+        }
     }
 
 });
